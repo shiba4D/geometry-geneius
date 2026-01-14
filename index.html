@@ -72,9 +72,12 @@
               <p>Area (A) = w X I</p>
               <div class="flex">
                 <!-- rectangle length -->
-                <input type="text" name="" id="" class="w-24 text-2xl p-2 rounded-sm" placeholder="length"> <span class="mr-4 ml-2">cm</span>
+                <input type="text" name="" id="rectangle-length" class="w-24 text-2xl p-2 rounded-sm" placeholder="Length"> <span class="mr-4 ml-2">cm</span>
                 <!--rectangle width -->
-                <input type="text" name="" id="" class="w-24 text-2xl p-2 rounded-sm" placeholder="width"> <span>cm</span>
+                <input type="text" name="" id="rectangle-width" class="w-24 text-2xl p-2 rounded-sm" placeholder="width"> <span>cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup></span></p>
               </div>
               <div class="card-actions justify-end">
 
@@ -83,16 +86,44 @@
             </div>
           </div>
 
-          <!-- Triangle card -->
+          <!-- Parallelogram card -->
           <div class="card w-80 shadow-sm">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                src="/images/parallelogram.png"
                 alt="Shoes"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Card Title</h2>
+              <h2 class="card-title">Parallelogram!</h2>
+              <p class="text-3xl">Area (A) = b X h</p>
+              <div>
+                  <input class="w-24 text-2xl p-2 rounded-sm"
+                   type="text" name="" id="parallelogram-base" placeholder="base">
+                  <span class="ml-2 mr-4">cm</span>
+                  <input class="w-24 text-2xl p-2 rounded-sm"
+                   type="text" name="" id="parallelogram-height" placeholder="height">
+                  <span>cm</span>
+              </div>
+              <div>
+                  <p>Area: <span id="parallelogram-area"></span> cm <sup>2</sup></p>
+              </div>
+              <div class="card-actions justify-end">
+                <button onclick="calculateParallelogramArea()"
+                 class="btn btn-primary w-full">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rhombus card -->
+          <div class="card w-80 shadow-sm">
+            <figure>
+              <img
+                src="/images/rhombus.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Rhombus</h2>
               <p>
                 A card component has a figure, a body part, and inside body
                 there are title and actions parts
@@ -102,16 +133,16 @@
               </div>
             </div>
           </div>
-          <!-- Triangle card -->
+          <!-- Pentagon card -->
           <div class="card w-80 shadow-sm">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                src="/images/pentagon.png"
                 alt="Shoes"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Card Title</h2>
+              <h2 class="card-title">Pentagon</h2>
               <p>
                 A card component has a figure, a body part, and inside body
                 there are title and actions parts
@@ -121,16 +152,16 @@
               </div>
             </div>
           </div>
-          <!-- Triangle card -->
+          <!-- Ellipse card -->
           <div class="card w-80 shadow-sm">
             <figure>
               <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                src="/images/ellipse.png"
                 alt="Shoes"
               />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Card Title</h2>
+              <h2 class="card-title">Ellipse!</h2>
               <p>
                 A card component has a figure, a body part, and inside body
                 there are title and actions parts
@@ -149,5 +180,6 @@
     </main>
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/reactangle-area.js"></script>
+    <script src="scripts/parallelogram-area.js"></script>
   </body>
 </html>

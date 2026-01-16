@@ -50,10 +50,7 @@
                 </p>
               </div>
               <div class="card-actions">
-                <button
-                  onclick="calculateTriangleArea()"
-                  class="btn btn-primary w-full"
-                >
+                <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">
                   Calculate
                 </button>
               </div>
@@ -143,12 +140,21 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Pentagon</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
+              <p>Area = 0.5 * p * b *</p>
+              <div class="flex gap-5">
+                <input class="w-24 text-2xl p-2 rounded-sm" 
+                type="text" name="" id="pentagon-perimeter"
+                placeholder="Peri">
+                <input class="w-24 text-2xl p-2 rounded-sm" 
+                type="text" name="" id="pentagon-apothem"
+                placeholder="Apo">
+              </div>
+              <div>
+                  <p>Area: <span id="pentagon-area">0</span></p>
+              </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button onclick="calculateParallelogramArea()" class="btn
+                 btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -162,12 +168,20 @@
             </figure>
             <div class="card-body">
               <h2 class="card-title">Ellipse!</h2>
-              <p>
-                A card component has a figure, a body part, and inside body
-                there are title and actions parts
-              </p>
+              <p>Area = π * a * b *</p>
+              <div class="flex gap-5">
+                <input class="w-24 text-2xl p-2 rounded-sm" 
+                type="text" name="" id="ellipse-major-radius"
+                placeholder="Major">
+                <input class="w-24 text-2xl p-2 rounded-sm" 
+                type="text" name="" id="ellipse-minor-radius"
+                placeholder="Minor">
+              </div>
+              <div>
+                  <p>Area: <span id="ellipse-area">0</span></p>
+              </div>
               <div class="card-actions justify-end">
-                <button class="btn btn-primary">Buy Now</button>
+                <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -181,5 +195,7 @@
     <script src="scripts/triangle-calculate.js"></script>
     <script src="scripts/reactangle-area.js"></script>
     <script src="scripts/parallelogram-area.js"></script>
+    <script src="scripts/pentagon-area.js"></script>
+    <script src="scripts/ellipse-area.js"></script>
   </body>
 </html>
